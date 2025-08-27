@@ -3,9 +3,9 @@
 ![Chumchon Logo](https://i.ibb.co/8nSwLf94/chumchon.png)
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fchumchon.app&label=website&up_message=online&down_message=offline&color=00d4aa)](https://chumchon.app)
-[![Stars](https://img.shields.io/github/stars/GHX5T-SOL/chumchon-web?style=social)](https://github.com/GHX5T-SOL/chumchon-web/stargazers)
-[![Issues](https://img.shields.io/github/issues/GHX5T-SOL/chumchon-web)](https://github.com/GHX5T-SOL/chumchon-web/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/GHX5T-SOL/chumchon-web)](https://github.com/GHX5T-SOL/chumchon-web/commits/main)
+[![Stars](https://img.shields.io/github/stars/GHX5T-SOL/chumchon?style=social)](https://github.com/GHX5T-SOL/chumchon/stargazers)
+[![Issues](https://img.shields.io/github/issues/GHX5T-SOL/chumchon)](https://github.com/GHX5T-SOL/chumchon/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/GHX5T-SOL/chumchon)](https://github.com/GHX5T-SOL/chumchon/commits/main)
 [![License](https://img.shields.io/badge/license-Proprietary-red)](LICENSE)
 [![X (Twitter) Follow](https://img.shields.io/twitter/follow/chumchon_app?style=social)](https://x.com/chumchon_app)
 
@@ -56,7 +56,7 @@ Visit the home site: https://chumchon.app
 - 🚀 **Android Demo**: https://expo.dev/accounts/ghxstxbt/projects/chumchon/builds/1f8f002d-9350-45a9-8402-79dbe442214d
 - 📱 **Web Demo**: https://chumchon--demo.expo.app/
 - 📄 **Technical Whitepaper**: https://drive.google.com/file/d/12ti28SJwCDthR6AAxyG7Uj4m3909FOqb/view
-- 🐙 **GitHub**: https://github.com/GHX5T-SOL/chumchon-web
+- 🐙 **GitHub**: https://github.com/GHX5T-SOL/chumchon
 - 𝕏 **Twitter/X**: https://x.com/chumchon_app
 - ✉️ **Contact**: chumchon@proton.me
 - 🍎 iOS demo app — coming soon
