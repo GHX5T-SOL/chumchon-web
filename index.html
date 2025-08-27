@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chumchon — The Degen Toolkit</title>
+  <meta name="description" content="Chumchon is a decentralized social network and messenger built on Solana. Token/NFT gated communities, on-chain escrow, ECIES encrypted DMs, PDAs, and more.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="Chumchon — The Degen Toolkit">
+  <meta property="og:description" content="Decentralized Social Network built on Solana. Android demo available; iOS coming soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="hero-image.svg">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Chumchon home">
+        <img src="chumchon-logo.svg" alt="Chumchon" class="logo">
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#how">How it works</a>
+        <a href="#whitepaper">Whitepaper</a>
+        <a href="#community">Community</a>
+      </nav>
+      <a class="cta gradient" href="https://expo.dev/accounts/ghxstxbt/projects/chumchon/builds/1f8f002d-9350-45a9-8402-79dbe442214d" target="_blank" rel="noopener">Download Android</a>
+    </div>
+  </header>
+
+  <main id="home" class="hero container">
+    <div class="hero-copy">
+      <p class="eyebrow">Decentralized • Encrypted • Mobile‑First</p>
+      <h1 class="title">THE DEGEN <span class="neon">TOOLKIT</span></h1>
+      <h2 class="subtitle">Decentralized Social Network built on <span class="solana">Solana</span></h2>
+      <p class="lead">Token/NFT‑gated communities, on‑chain escrow for OTC swaps, verifiable reputation via PDAs, and ECIES‑encrypted DMs. Sub‑second finality powered by Proof‑of‑History.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://expo.dev/accounts/ghxstxbt/projects/chumchon/builds/1f8f002d-9350-45a9-8402-79dbe442214d" target="_blank" rel="noopener">Download Android Demo</a>
+        <a class="btn ghost" href="https://chumchon--demo.expo.app/" target="_blank" rel="noopener">Open Web Demo</a>
+        <a class="btn ghost" href="#whitepaper">Technical Whitepaper</a>
+      </div>
+      <p class="note">iOS demo app is coming soon 🚧</p>
+    </div>
+    <div class="hero-art parallax" aria-hidden="true">
+      <img src="hero-image.svg" alt="Chumchon app preview on 3D phone" class="phone">
+      <div class="glow pink"></div>
+      <div class="glow purple"></div>
+      <div class="glow blue"></div>
+    </div>
+  </main>
+
+  <section id="features" class="section container">
+    <h3 class="section-title">What makes Chumchon different</h3>
+    <div class="features-grid">
+      <article class="card reveal">
+        <h4>On‑Chain Identity & Gating 🔐</h4>
+        <p>Communities are token/NFT‑gated, so only verified holders can join, post, and vote. That keeps bots and drive‑by trolls out.</p>
+        <ul>
+          <li>Wallet‑verified membership and roles</li>
+          <li>Profile NFTs and reputations you actually own</li>
+          <li>Signal over noise for healthier growth</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <h4>Private, Encrypted DMs 🛡️</h4>
+        <p>End‑to‑end encryption with modern crypto. Messages are opaque to everyone except the intended recipient.</p>
+        <ul>
+          <li>ECIES with X25519 + ChaCha20‑Poly1305</li>
+          <li>Keys derived from your wallet</li>
+          <li>On‑chain pointers to IPFS/Arweave payloads</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <h4>Trustless Escrow for OTC 🐳</h4>
+        <p>Peer‑to‑peer swaps settle atomically with no counterparty risk. Perfect for community OTC deals and whale coordination.</p>
+        <ul>
+          <li>One‑click, all‑or‑nothing execution</li>
+          <li>Transparent on‑chain settlement</li>
+          <li>Sub‑second finality on Solana</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <h4>Realtime DeFi + Social ⚡</h4>
+        <p>Trade, tip, and track performance without leaving the app. Rally your community around what’s moving now.</p>
+        <ul>
+          <li>Jupiter swaps and trend feeds</li>
+          <li>Leaderboards and verifiable PnL</li>
+          <li>On‑chain votes and meme challenges</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="stack" class="section container">
+    <h3 class="section-title">Architecture at a glance</h3>
+    <div class="stack">
+      <div class="stack-item">
+        <h4>Frontend</h4>
+        <p>React Native (Expo 53), TypeScript, React Navigation 7, React Query. SMS‑optimized, Mobile Wallet Adapter for signing and SIWS.</p>
+      </div>
+      <div class="stack-item">
+        <h4>On‑Chain</h4>
+        <p>Rust + Anchor 0.31.1 programs on Solana. State in PDAs; SPL Token for gating; WebSockets events for realtime UX.</p>
+      </div>
+      <div class="stack-item">
+        <h4>Storage</h4>
+        <p>Hybrid model: PDA metadata on‑chain; large assets on Arweave/IPFS with on‑chain hashes for integrity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section container">
+    <h3 class="section-title">How it works</h3>
+    <ol class="timeline">
+      <li class="step reveal">
+        <span class="badge">1</span>
+        <h4>Connect Wallet</h4>
+        <p>Authorize via Mobile Wallet Adapter (Phantom/Backpack). Optional SIWS binds domain statements to your session.</p>
+      </li>
+      <li class="step reveal">
+        <span class="badge">2</span>
+        <h4>Join Gated Groups</h4>
+        <p>Program checks SPL balances/NFT metadata. Membership recorded in PDAs; roles unlock channels and posting.</p>
+      </li>
+      <li class="step reveal">
+        <span class="badge">3</span>
+        <h4>Encrypt & Post</h4>
+        <p>DMs use ECIES (X25519 + HKDF + ChaCha20‑Poly1305). Content hashes anchor IPFS/Arweave payloads on‑chain.</p>
+      </li>
+      <li class="step reveal">
+        <span class="badge">4</span>
+        <h4>Trade & Tip</h4>
+        <p>Escrow PDAs atomically settle OTC swaps. Jupiter v6 routes swaps; tips stream via SPL transfers.</p>
+      </li>
+      <li class="step reveal">
+        <span class="badge">5</span>
+        <h4>Build Reputation</h4>
+        <p>On‑chain score aggregates posts, tips, and participation. Leaderboards pull PnL via Cabalspy for clout.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="whitepaper" class="section container">
+    <div class="paper card">
+      <h3 class="section-title">Technical Whitepaper</h3>
+      <p>A deeper look at cryptography, program design, and Solana‑native UX. We cover identity, encryption, escrow flows, storage choices, and performance assumptions.</p>
+      <a class="btn primary" href="https://drive.google.com/file/d/12ti28SJwCDthR6AAxyG7Uj4m3909FOqb/view" target="_blank" rel="noopener">Download Whitepaper</a>
+    </div>
+  </section>
+
+  <section id="get-started" class="section container">
+    <h3 class="section-title">Get started</h3>
+    <p class="lead">Kick the tires now—no waitlist. Try the web demo or install the Android build.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://expo.dev/accounts/ghxstxbt/projects/chumchon/builds/1f8f002d-9350-45a9-8402-79dbe442214d" target="_blank" rel="noopener">Download Android Demo</a>
+      <a class="btn ghost" href="https://chumchon--demo.expo.app/" target="_blank" rel="noopener">Open Web Demo</a>
+      <a class="btn ghost" href="https://github.com/GHX5T-SOL/chumchon-web" target="_blank" rel="noopener">View Source on GitHub</a>
+    </div>
+  </section>
+
+  <footer id="community" class="site-footer">
+    <div class="container footer-content">
+      <div class="brandline">
+        <img src="chumchon-logo.svg" alt="Chumchon" class="logo small">
+        <span class="tag">Built on Solana ⚙️🟣💙</span>
+      </div>
+      <div class="links">
+        <a class="btn ghost" href="https://github.com/GHX5T-SOL/chumchon-web" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://x.com/chumchon_app" target="_blank" rel="noopener">X (Twitter)</a>
+        <a class="btn ghost" href="mailto:chumchon@proton.me">Email</a>
+      </div>
+      <p class="legal">© <span id="year"></span> Chumchon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
