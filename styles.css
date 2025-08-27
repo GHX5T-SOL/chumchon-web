@@ -54,8 +54,8 @@ body {
 .note { color: var(--muted); font-size: 14px; }
 
 .hero-art { position: relative; width: 100%; height: 420px; display: grid; place-items: center; }
-.phone { width: min(560px, 90%); height: auto; filter: drop-shadow(0 40px 80px rgba(0,0,0,0.8)); transform: rotate(-6deg); }
-.glow { position: absolute; width: 60%; height: 60%; border-radius: 50%; filter: blur(80px); opacity: 0.55; mix-blend-mode: screen; }
+.phone { width: min(560px, 90%); height: auto; filter: drop-shadow(0 40px 80px rgba(0,0,0,0.8)); transform: rotate(-6deg); position: relative; z-index: 1; }
+.glow { position: absolute; width: 60%; height: 60%; border-radius: 50%; filter: blur(80px); opacity: 0.55; mix-blend-mode: screen; z-index: 0; pointer-events: none; }
 .glow.pink { background: var(--neon-pink); left: 10%; top: 18%; }
 .glow.purple { background: var(--neon-purple); right: 10%; bottom: 10%; }
 .glow.blue { background: var(--neon-blue); right: 30%; top: 0; }
