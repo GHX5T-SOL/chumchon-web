@@ -53,7 +53,7 @@ Visit the home site: https://chumchon.app
 
 ## Quick Links
 
-- 🚀 **Android Demo**: https://expo.dev/accounts/ghxstxbt/projects/chumchon/builds/1f8f002d-9350-45a9-8402-79dbe442214d
+- 🚀 **Android Demo**: https://expo.dev/accounts/ghxstxbt/projects/chumchon/builds/bb5cdc94-b855-4ba0-9baa-fc92daceab83
 - 📱 **Web Demo**: https://chumchon--demo.expo.app/
 - 📄 **Technical Whitepaper**: https://drive.google.com/file/d/12ti28SJwCDthR6AAxyG7Uj4m3909FOqb/view
 - 🐙 **GitHub**: https://github.com/GHX5T-SOL/chumchon
